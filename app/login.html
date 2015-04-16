@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>App - Login</title>
+    <meta name="description" content="App Description">
+    <meta name="author" content="Nikolay Dyankov">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Remove the hash from the URL -->
+    <script type="text/javascript">
+    var scrollV, scrollH, loc = window.location;
+    if ("pushState" in history)
+    history.pushState("", document.title, loc.pathname + loc.search);
+    else {
+        // Prevent scrolling by storing the page's current scroll offset
+        scrollV = document.body.scrollTop;
+        scrollH = document.body.scrollLeft;
+
+        loc.hash = "";
+
+        // Restore the scroll offset, should be flicker free
+        document.body.scrollTop = scrollV;
+        document.body.scrollLeft = scrollH;
+    }
+    </script>
+</head>
+
+<body>
+    Please log in!
+    <a href="/auth/facebook">Login with Facebook</a>
+    <a href="/auth/twitter">Login with Twitter</a>
+    <a href="/auth/google">Login with Google</a>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>App - Dashboard</title>
+    <meta name="description" content="App Description">
+    <meta name="author" content="Nikolay Dyankov">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Remove the hash from the URL -->
+    <script type="text/javascript">
+    var scrollV, scrollH, loc = window.location;
+    if ("pushState" in history)
+    history.pushState("", document.title, loc.pathname + loc.search);
+    else {
+        // Prevent scrolling by storing the page's current scroll offset
+        scrollV = document.body.scrollTop;
+        scrollH = document.body.scrollLeft;
+
+        loc.hash = "";
+
+        // Restore the scroll offset, should be flicker free
+        document.body.scrollTop = scrollV;
+        document.body.scrollLeft = scrollH;
+    }
+    </script>
+</head>
+
+<body data-user="<%= user.id %>">
+    Welcome to your dashboard!
+    <a href="/logout">Log Out</a>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
