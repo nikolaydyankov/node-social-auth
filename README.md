@@ -3,11 +3,11 @@ Boilerplate app with social auth in Node.js. Uses express, passport, mongo.
 
 <h2>How to setup</h2>
 
-1. Install dependencies:
+<h3>Install dependencies:</h3>
 
 <code>npm install</code>
 
-2. Configue social login in config/auth.js:
+<h3>Configue social login in config/auth.js:</h3>
 
 <code>
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
 };
 </code>
 
-3. Configue Mongo from config/database.js:
+<h3>Configue Mongo from config/database.js:</h3>
 
 <code>
 module.exports = {
