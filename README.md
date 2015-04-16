@@ -9,7 +9,7 @@ Boilerplate app with social auth in Node.js. Uses express, passport, mongo.
 
 <h3>Configue social login in config/auth.js:</h3>
 
-<code>
+```javascript
 module.exports = {
     'facebookAuth' : {
         clientID: '',
@@ -27,12 +27,12 @@ module.exports = {
         returnURL: ''
     }
 };
-</code>
+```
 
 <h3>Configue Mongo from config/database.js:</h3>
 
-<code>
+```javascript
 module.exports = {
     'url' : ''
 }
-</code>
+```
