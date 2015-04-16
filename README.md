@@ -1,5 +1,5 @@
 # node-social-auth
-Boilerplate app with social auth in Node.js. Uses express, passport, mongo.
+This is a boilerplate Node.js app, which provides simple authentication with Facebook, Twitter and Google. It uses Express, Passport and MongoDB for storing sessions.
 
 <h2>How to setup</h2>
 
